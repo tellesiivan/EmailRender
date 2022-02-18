@@ -14,3 +14,119 @@ a {
 * {
   box-sizing: border-box;
 }
+.full {
+  width: 100%;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.btn-mrg {
+  margin-top: 1rem;
+}
+.between-margin {
+  margin: 1rem 0;
+}
+.itemCont {
+  width: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  background-color: #1a1d21;
+}
+.itemContH {
+  height: 50%;
+  margin: 0 0 auto 0;
+}
+.codeBlockH {
+  height: 50%;
+  margin: auto 0 0 0;
+}
+.itemCont::-webkit-scrollbar {
+  display: none;
+}
+.itemContTop {
+  position: sticky;
+
+  top: 0px;
+
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #24272c;
+  border: 1px solid #2a2b30;
+  border-radius: 4px;
+  box-shadow: 0px 6px 12px 6px #0000002b;
+}
+.itemContTop::-webkit-scrollbar {
+  display: none;
+}
+.itemContBtm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  margin-bottom: 15px;
+}
+.itemContBtm::-webkit-scrollbar {
+  display: none;
+}
+.render {
+  padding-top: 10px;
+  border-top: 1px solid #2a2b30;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.render button {
+  background-color: #141618;
+  border: 1px solid #2a2b30;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  padding: 7px 10px;
+}
+.itemSect {
+  list-style: none;
+  margin: 0.7rem 0;
+  background-color: rgb(21, 21, 26);
+  border: 1px solid #2a2b30;
+  border-radius: 5px;
+  padding: 10px;
+}
+.itemSectDetails {
+  display: flex;
+  flex-direction: column;
+}
+.itemSectDetails p {
+  font-size: small;
+  color: rgb(160, 160, 160);
+}
+.itemSectDetailsDiv span {
+  font-weight: 600;
+  font-size: small;
+  color: rgb(171, 171, 223);
+}
+.itemSectDetailsDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.chip {
+  background-color: #000000 !important;
+  color: rgb(255, 255, 255);
+}
+.topChip {
+  background-color: #141518 !important;
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+}
