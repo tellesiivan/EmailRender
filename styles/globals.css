@@ -52,6 +52,9 @@ a {
 .itemCont::-webkit-scrollbar {
   display: none;
 }
+.cblock::-webkit-scrollbar {
+  display: none !important;
+}
 .itemContTop {
   position: sticky;
 

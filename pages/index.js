@@ -14,7 +14,7 @@ export default function Home() {
 
   function getValues(item) {
     let x = [];
-    sections !== null ? x.push(item, ...sections) : x.push(item);
+    sections !== null ? x.push(...sections, item) : x.push(item);
     setSections(x);
   }
 

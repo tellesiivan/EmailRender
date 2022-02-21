@@ -29,6 +29,7 @@ export default function CodeBlockEl({ sections, renderHandler }) {
       </button>
       <CopyBlock
         text={html}
+        className="cblock"
         CodeBlock={true}
         theme={dracula}
         language="html"
