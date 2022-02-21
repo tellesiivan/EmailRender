@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <div className={`${styles.half} ${styles.right}`}>
             {render ? (
-              <CodeBlockEl sections={sections} />
+              <CodeBlockEl sections={sections} renderHandler={renderHandler} />
             ) : (
               <ItemContainer
                 sections={sections}

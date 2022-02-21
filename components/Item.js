@@ -14,7 +14,7 @@ export default function Item({ details }) {
       <div className="itemSectDetails">
         <div className="itemSectDetailsDiv">
           <span>Link</span>
-          <p>{link}</p>
+          <p>{details.link ? link : "N/A"}</p>
         </div>
         <div className="itemSectDetailsDiv">
           <span>Image Source</span>
