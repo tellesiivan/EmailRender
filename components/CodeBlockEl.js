@@ -14,8 +14,8 @@ export default function CodeBlockEl({ sections, renderHandler }) {
       <tbody>${top}     <tr>
           <td align="center" valign="top">
             <table align="center" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" class="wrapper" width="600">
-              <tbody>
-  ${items} </tbody>
+              <tbody>        <!--<! 🔻🔻🔻🔻🔻 ======= ADDED SECTIONS : START ======= 🔻🔻🔻🔻   ---->
+  ${items}    <!--<! 🔺🔺🔺🔺🔺🔺🔺🔺🔺 ========= ADDED SECTIONS : END  🔺🔺🔺🔺🔺🔺🔺🔺🔺 =======  ----></tbody>
             </table>
           </td>
         </tr>  ${footer}  </tbody></table>

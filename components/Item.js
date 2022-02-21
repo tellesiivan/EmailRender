@@ -12,10 +12,12 @@ export default function Item({ details }) {
     <li className="itemSect">
       <Chip label={details.id} size="small" className="chip" />
       <div className="itemSectDetails">
-        <div className="itemSectDetailsDiv">
-          <span>Link</span>
-          <p>{details.link ? link : "N/A"}</p>
-        </div>
+        {details.link && (
+          <div className="itemSectDetailsDiv">
+            <span>Link</span>
+            <p>{details.link ? link : "N/A"}</p>
+          </div>
+        )}
         <div className="itemSectDetailsDiv">
           <span>Image Source</span>
           <p>{src}</p>
