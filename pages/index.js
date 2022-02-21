@@ -6,6 +6,11 @@ import { useState } from "react";
 
 export default function Home() {
   const [sections, setSections] = useState(null);
+  const [render, setRendered] = useState(false);
+
+  function renderHandler(render) {
+    setRendered(render);
+  }
 
   function getValues(item) {
     let x = [];
@@ -21,7 +26,14 @@ export default function Home() {
             <AddDataForm getValues={getValues} />
           </div>
           <div className={`${styles.half} ${styles.right}`}>
-            <ItemContainer sections={sections} />
+            {render ? (
+              <CodeBlockEl sections={sections} />
+            ) : (
+              <ItemContainer
+                sections={sections}
+                renderHandler={renderHandler}
+              />
+            )}
           </div>
         </div>
       </main>

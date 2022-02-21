@@ -2,10 +2,9 @@ import * as React from "react";
 import Item from "./Item";
 import Chip from "@mui/material/Chip";
 
-export default function ItemContainer({ sections }) {
+export default function ItemContainer({ sections, renderHandler }) {
   if (sections === null) return <p>Add sections </p>;
 
-  console.log(sections);
   return (
     <ul className="itemCont">
       <div className="itemContTop">
@@ -20,7 +19,7 @@ export default function ItemContainer({ sections }) {
           ))}
         </div>
         <div className="render">
-          <button>Render HTML</button>
+          <button onClick={() => renderHandler(true)}>Render HTML</button>
         </div>
       </div>
       {sections.map((section) => (

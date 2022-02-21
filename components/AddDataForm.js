@@ -26,10 +26,10 @@ export default function AddDataForm({ getValues }) {
   function submit(e) {
     e.preventDefault();
     console.log(id);
-    if (details.imgSrc === "" || details.link === "")
+    if (details.imgSrc === "")
       return setError({
         show: true,
-        errorMsg: `${details.imgSrc === "" ? "Add img src" : "Add Link"}`,
+        errorMsg: "Add img src",
       });
     const secInfo = {
       ...details,
