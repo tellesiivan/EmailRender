@@ -96,7 +96,7 @@ export default function AddDataForm({ getValues }) {
         id="eventDate"
         label="Event Date"
         variant="outlined"
-        className="mt-4"
+        className="between-margin "
         onChange={captureValue}
         value={details.eventDate}
       />
