@@ -19,7 +19,9 @@ export default function ItemContainer({ sections, renderHandler }) {
           ))}
         </div>
         <div className="render">
-          <button onClick={() => renderHandler(true)}>Render HTML</button>
+          <button onClick={() => renderHandler(true)} className="text-sm">
+            Render HTML
+          </button>
         </div>
       </div>
       {sections.map((section) => (

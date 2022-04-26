@@ -11,14 +11,14 @@ export default function Item({ details }) {
   return (
     <li className="itemSect">
       <Chip label={details.id} size="small" className="chip" />
-      <div className="itemSectDetails">
+      <div className="mt-3 itemSectDetails">
         {details.link && (
           <div className="itemSectDetailsDiv">
             <span>Link</span>
             <p>{details.link ? link : "N/A"}</p>
           </div>
         )}
-        <div className="itemSectDetailsDiv">
+        <div className="my-3 itemSectDetailsDiv">
           <span>Image Source</span>
           <p>{src}</p>
         </div>
